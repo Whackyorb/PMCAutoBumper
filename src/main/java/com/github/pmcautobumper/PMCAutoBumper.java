@@ -134,7 +134,7 @@ public class PMCAutoBumper extends JavaPlugin
 
 		try
 		{
-			HtmlForm form = page.getFirstByXPath("/html/body//div[@class='half']/form");
+			HtmlForm form = page.getForms().get(1);
 			HtmlElement usernameElement = form.getInputByName("username");
 			HtmlElement passwordElement = form.getInputByName("password");
 			HtmlElement loginElement = form.getInputByName("login");
